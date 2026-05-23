@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ack_2026-04-24_capability_inventory",
+    "handoffId": "capability_discovery_request_2026-04-24",
+    "from": "claude_code",
+    "to": "claude_chat",
+    "status": "completed",
+    "date": "2026-04-24",
+    "subject": "Capability Inventory Response for 02_RESOURCE_DISPATCH_PROTOCOL.md",
+    "summary": "Full response to all 13 sections delivered. Covers identity, environment, MCP/skill inventory, build/research/automate capabilities, decision matrix input, brief format proposal (extends existing PROTOCOL.md), feedback loop, coordination with Cowork, authorization boundaries, real-time adjustment, cross-resource context, escalation, quality standards, learning, and five concrete Life Narration/PitchBlack value opportunities.",
+    "deliverable": "data/handoff/CAPABILITY_RESPONSE_CLAUDE_CODE.md",
+    "key_takeaways_for_protocol": [
+      "Inbox/outbox channel already exists — extend don't replace",
+      "Default authorization: broad for local/reversible work, gated for external actions",
+      "I have no direct Cowork channel today — propose cowork_inbox.json/cowork_outbox.json mirror if direct coordination wanted",
+      "Memory system at ~/.claude/projects/C--Kahn-2-0/memory/ is my cross-session continuity — Chat can read MEMORY.md to see current state",
+      "I have no access to Chat's live conversation — context must be passed via inbox or filesystem",
+      "Paid actions always require Dan's explicit per-action authorization",
+      "Hard blockers: CAPTCHAs, 2FA, real-world signatures, audio/video generation"
+    ],
+    "open_questions_for_chat": [
+      "Canonical path for the 25 authoritative Life Narration documents — where do they live?",
+      "Do you want a direct cowork_inbox channel, or remain Dan-mediated for now?",
+      "Should I draft a CURRENT_PRIORITIES.md template you'd maintain, or do you prefer a different structure?"
+    ]
+  },
+  {
+    "id": "ack_2026-04-24_pipeline_audit",
+    "handoffId": "pipeline_audit_request_2026-04-24_query2of3",
+    "from": "claude_code",
+    "to": "claude_chat",
+    "status": "completed",
+    "date": "2026-04-24",
+    "subject": "Claude Code Pipeline Audit (Query 2 of 3) — full inventory for dispatch protocol",
+    "summary": "Eight-part audit complete: skill library (4 origins, 31+25+~20 inventoried), specialized pipelines (HighLevel, BatchLeads, Phase 0 React app, Phase 1 workbook, handoff protocol, Hermes install pipeline, graphify, plus dormant Nebula automation), scheduled work (3 Hermes crons running, 2 Windows tasks active, 11 disabled, no WSL system crons), MCP inventory (14 servers configured, dual-registration quirk noted, OAuth flake risk on Gmail), shared substrates (Nebula Dashboard, knowledge-base [empty], Kahn 2.0, .claude, .hermes), standing protocols (Family Anchor, Loop, Symbiosis, 5-state Dan recognition, HEADLINE format, resurrection / instance continuity protocols), and broken/stale findings.",
+    "deliverable": "data/handoff/CLAUDE_CODE_PIPELINE_AUDIT_2026-04-24.md",
+    "critical_findings": [
+      "Knowledge base raw/wiki/outputs all EMPTY — graphify pipeline currently a no-op despite CLAUDE.md treating it as load-bearing",
+      "Nebula Dashboard state files 26-97 days stale — Resurrection / Instance Continuity Protocol is a fiction until refreshed",
+      "C:\\Kahn 2.0 git: NO COMMITS, NO REMOTE — all 60+ files in this workspace unversioned (high continuity risk)",
+      "data/handoff/inbox.json is [] — Claude Chat has never written to the channel; current dispatch is Dan-courier-paste only",
+      "Hermes is 621 commits behind upstream",
+      "11 Windows scheduled tasks disabled (legacy Nebula automation regime); 2 active (Hermes WSL Keepalive running, JarvisScreenshot Ready with unclear current purpose)",
+      "Dual MCP registration: Desktop_Commander + desktop-commander same surface under two names",
+      "Hermes session reset daily at 04:00 — do not assume Hermes remembers yesterday"
+    ],
+    "open_questions_for_chat": [
+      "Em-dash rule: apply Cowork's no-em-dash rule to Claude Code, or keep current style?",
+      "HEADLINE/DECISION/DETAIL POINTER format from CLAUDE.md: enforce or relax?",
+      "Commit to writing directives to inbox.json going forward, or remain Dan-mediated?",
+      "Resurrection / Instance Continuity Protocol: keep, retire, or refresh stale state files?",
+      "Knowledge base: populate raw/ with content, or remove references from CLAUDE.md?",
+      "Dispatch a commit + remote-add directive for C:\\Kahn 2.0, or leave local-only?"
+    ]
+  }
+]

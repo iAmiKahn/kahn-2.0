@@ -1,0 +1,76 @@
+{
+  "personal": {
+    "name": "Dan Kahn",
+    "age": 42,
+    "sex": "male",
+    "height_in": 71,
+    "weight_lbs": 205,
+    "bodyFat_pct": 30
+  },
+  "targets": {
+    "weight_lbs": 190,
+    "bodyFat_pct_min": 12,
+    "bodyFat_pct_max": 15,
+    "timeline_months": 24
+  },
+  "medical": {
+    "medications": [
+      {
+        "name": "Abilify (Aripiprazole)",
+        "dosage": null,
+        "timing": "morning",
+        "notes": "Partial D2 agonist — 10-20% metabolic headwind, possible appetite effects"
+      },
+      {
+        "name": "Sleep Aid",
+        "type": null,
+        "dosage": null,
+        "timing": "bedtime",
+        "notes": "Specific medication TBD"
+      }
+    ],
+    "conditions": [
+      "ADHD (confirmed)",
+      "Suspected Autism Spectrum (Tier 1)"
+    ],
+    "allergies": [],
+    "injuries": []
+  },
+  "schedule": {
+    "iopDays": [
+      "mon",
+      "tue",
+      "wed",
+      "thu",
+      "fri"
+    ],
+    "iopTime": {
+      "start": "09:00",
+      "end": "11:45"
+    },
+    "trainingWindow": {
+      "start": "13:00",
+      "end": "15:00"
+    },
+    "walkTime": "After dinner, 1 hour"
+  },
+  "outstanding": {
+    "testosterone_total": null,
+    "testosterone_free": null,
+    "sleepAidName": null,
+    "sleepAidDosage": null,
+    "abilifyDosage": null,
+    "baselineLifts": null,
+    "mileTime": null,
+    "caloricIntakeEstimate": null,
+    "waistCircumference": null,
+    "neckCircumference": null,
+    "kitchenEquipment": null,
+    "weeklyFoodBudget": null,
+    "wearableDevice": null,
+    "currentSupplements": null,
+    "bloodwork": null
+  },
+  "createdAt": "2026-04-08T04:54:03.670Z",
+  "updatedAt": "2026-04-08T04:54:03.670Z"
+}

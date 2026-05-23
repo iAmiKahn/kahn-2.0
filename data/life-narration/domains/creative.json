@@ -1,0 +1,66 @@
+{
+  "id": "creative",
+  "name": "Creative",
+  "status": "active",
+  "currentState": "Life Narration system being built (this system). Nebula Dashboard operational with consciousness replication infrastructure. Knowledge system at C:\\Kahn\\ actively maintained and GitHub-mirrored. PitchBlack vision fully documented.",
+  "recurring": [],
+  "objectives": [
+    {
+      "id": "creative_ln_build",
+      "title": "Build Life Narration system — Phase 0",
+      "description": "Domain model, roadmap engine, daily narration view, handoff protocol. The tool Dan uses every day.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": "2026-04-14",
+      "dependencies": [],
+      "actions": [
+        {
+          "id": "creative_ln_foundation",
+          "title": "Complete Life Narration foundation build (data model, engine, UI)",
+          "status": "in_progress",
+          "dueDate": "2026-04-08"
+        },
+        {
+          "id": "creative_ln_test",
+          "title": "Test and iterate on daily narration workflow",
+          "status": "pending",
+          "dueDate": "2026-04-09"
+        }
+      ]
+    },
+    {
+      "id": "creative_knowledge",
+      "title": "Maintain and grow knowledge system",
+      "description": "C:\\Kahn\\ knowledge base and Nebula Dashboard. GitHub mirror. Cross-platform AI integration.",
+      "status": "in_progress",
+      "priority": 3,
+      "deadline": null,
+      "dependencies": [],
+      "actions": [
+        {
+          "id": "creative_knowledge_health",
+          "title": "Fill health domain documentation gaps in C:\\Kahn\\HEALTH\\",
+          "status": "pending",
+          "dueDate": "2026-04-10"
+        },
+        {
+          "id": "creative_knowledge_state",
+          "title": "Update daily_state.md (7 days stale)",
+          "status": "pending",
+          "dueDate": "2026-04-07"
+        }
+      ]
+    }
+  ],
+  "blockers": [],
+  "metrics": [
+    {
+      "id": "creative_m1",
+      "name": "Life Narration build progress",
+      "current": 0,
+      "target": 100,
+      "unit": "percent"
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

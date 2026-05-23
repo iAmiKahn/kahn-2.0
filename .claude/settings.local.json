@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Desktop_Commander__read_file",
+      "mcp__Desktop_Commander__interact_with_process",
+      "mcp__Desktop_Commander__write_file",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "mcp__Claude_in_Chrome__get_page_text",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "mcp__Claude_in_Chrome__read_page",
+      "mcp__Claude_in_Chrome__computer",
+      "mcp__Claude_in_Chrome__find",
+      "PowerShell(Get-CimInstance Win32_StartupCommand)",
+      "PowerShell($active = 'OpenClaw Watchdog','KnowledgeSystemProjectionSync','KnowledgeSystemStandingServices','JarvisScreenshot'; foreach \\($name in $active\\) { $t = Get-ScheduledTask -TaskName $name -ErrorAction SilentlyContinue; if \\($t\\) { Write-Output \"=== $name ===\"; Write-Output \\(\"  Hidden:  \" + $t.Settings.Hidden\\); foreach \\($a in $t.Actions\\) { Write-Output \\(\"  Exec:    \" + $a.Execute\\); Write-Output \\(\"  Args:    \" + $a.Arguments\\); Write-Output \\(\"  WorkDir: \" + $a.WorkingDirectory\\) }; Write-Output '' } })",
+      "PowerShell(Disable-ScheduledTask -TaskName 'OpenClaw Watchdog' -TaskPath '\\\\')",
+      "PowerShell(Get-WinEvent -FilterHashtable @{LogName='Microsoft-Windows-TaskScheduler/Operational'; Id=200} -MaxEvents 60 -ErrorAction SilentlyContinue | Select-Object TimeCreated, @{n='Task';e={$_.Properties[0].Value}}, @{n='Action';e={$_.Properties[1].Value}} | Format-Table -AutoSize -Wrap)",
+      "PowerShell(Get-CimInstance Win32_Process -Filter \"Name='cmd.exe' OR Name='powershell.exe' OR Name='conhost.exe' OR Name='pwsh.exe'\")",
+      "PowerShell($startup = @\\('C:\\\\Users\\\\iAmiK\\\\AppData\\\\Roaming\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Startup','C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Startup'\\); $startup | ForEach-Object { if \\(Test-Path $_\\) { Write-Output \"=== $_ ===\"; Get-ChildItem -LiteralPath $_ | Select-Object Name, Length, LastWriteTime | Format-Table -AutoSize } })",
+      "PowerShell($log = 'C:\\\\Users\\\\iAmiK\\\\AppData\\\\Local\\\\Temp\\\\cmd-spawn-log.txt'; $lines = Get-Content $log; Write-Output \"Total spawn events: $\\($lines.Count\\)\"; Write-Output ''; Write-Output '=== Spawned process names \\(counts\\) ==='; $lines | ForEach-Object { if \\($_ -match 'PID=\\\\d+ \\(\\\\S+\\)'\\) { $matches[1] } } | Group-Object | Sort-Object Count -Descending | Select-Object Count, Name | Format-Table -AutoSize; Write-Output ''; Write-Output '=== Top parent processes \\(counts\\) ==='; $lines | ForEach-Object { if \\($_ -match 'parent PID=\\\\d+ \\(\\\\S+\\)'\\) { $matches[1] } } | Group-Object | Sort-Object Count -Descending | Select-Object -First 15 Count, Name | Format-Table -AutoSize)",
+      "PowerShell($tasks = @\\('KnowledgeSystemProjectionSync','KnowledgeSystemStandingServices','Hermes WSL Keepalive','JarvisScreenshot'\\); foreach \\($t in $tasks\\) { $task = Get-ScheduledTask -TaskName $t -ErrorAction SilentlyContinue; if \\($task\\) { Write-Output \"===== $t =====\"; Write-Output \"State: $\\($task.State\\)\"; Write-Output \"Hidden: $\\($task.Settings.Hidden\\)\"; foreach \\($a in $task.Actions\\) { Write-Output \"Execute: $\\($a.Execute\\)\"; Write-Output \"Arguments: $\\($a.Arguments\\)\"; Write-Output \"WorkingDir: $\\($a.WorkingDirectory\\)\" }; foreach \\($tr in $task.Triggers\\) { Write-Output \"Trigger: $\\($tr.CimClass.CimClassName\\) | Repeat: $\\($tr.Repetition.Interval\\)\" }; Write-Output \"\" } })",
+      "PowerShell($startupPaths = @\\(\"$env:APPDATA\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Startup\", \"$env:ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\Startup\"\\); foreach \\($p in $startupPaths\\) { if \\(Test-Path $p\\) { Write-Output \"===== $p =====\"; Get-ChildItem $p | Select-Object Name, LastWriteTime | Format-Table -AutoSize | Out-String } })",
+      "PowerShell(Disable-ScheduledTask -TaskName \"KnowledgeSystemProjectionSync\")",
+      "PowerShell(Disable-ScheduledTask -TaskName \"KnowledgeSystemStandingServices\")",
+      "PowerShell(Get-ScheduledTask -TaskName \"Hermes WSL Keepalive\" | Get-ScheduledTaskInfo | Format-List; Write-Output \"---ACTIONS---\"; \\(Get-ScheduledTask -TaskName \"Hermes WSL Keepalive\"\\).Actions | Format-List; Write-Output \"---TRIGGERS---\"; \\(Get-ScheduledTask -TaskName \"Hermes WSL Keepalive\"\\).Triggers | Format-List)",
+      "PowerShell($tasks = @\\('KnowledgeSystemProjectionSync','KnowledgeSystemStandingServices','OpenClaw Watchdog','JarvisScreenshot','Hermes WSL Keepalive'\\); foreach \\($t in $tasks\\) { $task = Get-ScheduledTask -TaskName $t -ErrorAction SilentlyContinue; if \\($task\\) { Write-Output \"===== $t =====\"; Write-Output \"State: $\\($task.State\\)\"; foreach \\($a in $task.Actions\\) { Write-Output \"Exec: $\\($a.Execute\\)\"; Write-Output \"Args: $\\($a.Arguments\\)\" } } else { Write-Output \"$t : NOT FOUND\" } })"
+    ]
+  }
+}

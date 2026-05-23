@@ -1,0 +1,44 @@
+{
+  "id": "dan_kahn",
+  "name": "Daniel Aaron Kahn",
+  "age": 42,
+  "location": "Lake in the Hills, IL (brother's house)",
+  "neurology": {
+    "adhd": "confirmed",
+    "autism": "suspected_tier_1",
+    "notes": "Voice-first thinker. Needs flywheel (purpose/project) to function at capacity. Transmission model: multiple simultaneous cognitive gears require directional momentum."
+  },
+  "medications": ["Abilify (mood)", "Sleep aid"],
+  "constraints": {
+    "iop": { "schedule": "Mon-Fri 9:00-11:45 AM", "status": "active" },
+    "budget": 1000,
+    "income": 0,
+    "housing": "Air mattress at brother Brett's house",
+    "custody": "No visitation rights currently"
+  },
+  "schedule": {
+    "morning": "IOP 9:00-11:45",
+    "midday": "Training 1:00-3:00 PM",
+    "evening": "Walk after dinner (1 hour)",
+    "available": "Afternoons post-training, evenings, weekends"
+  },
+  "strengths": [
+    "20+ years real estate tech, operations, AI automation",
+    "Written deliverables and system building",
+    "AI tools integration and documentation",
+    "Former CTO/President of 450-agent real estate operation",
+    "Strategic thinking, voice-first articulation"
+  ],
+  "communicationStyle": {
+    "preferred": "Direct, fast, no fluff",
+    "states": {
+      "focused": "Short and direct — match with terse, action-oriented responses",
+      "brainstorming": "What-if mode — be expansive, explore possibilities",
+      "frustrated": "CAPS and expletives — acknowledge, simplify, solve",
+      "flow": "Rapid iteration — match pace, anticipate needs",
+      "strategic": "Big picture — respond with frameworks"
+    }
+  },
+  "startDate": "2026-03-29",
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "project_nebula",
+  "title": "Project Nebula",
+  "summary": "A compound in the Colorado foothills near Golden that houses a creative headquarters, production business, neurodivergent retreat center, wedding venue, and infrastructure for Dan's children — funded primarily through grants and favorable loans, operating on a philosophy of sustainable abundance.",
+  "components": [
+    {
+      "name": "Nebula HQ",
+      "description": "Matte black steel creative headquarters partially embedded in a hillside. Omnipresent AI, 3D printers, fabrication suite."
+    },
+    {
+      "name": "PitchBlack",
+      "description": "Production business that creates the best version of everything, charges along the way, eventually gives it away freely."
+    },
+    {
+      "name": "Neurodivergent Retreat",
+      "description": "Week-long programs in cabins. Rotating therapists and psychiatrists. Talent pipeline for PitchBlack."
+    },
+    {
+      "name": "Wedding Venue",
+      "description": "Pole barn ceremony/reception space with cabin accommodations for destination events."
+    },
+    {
+      "name": "Sunday Experience",
+      "description": "Weekly viral experience — bottomless mimosas and live-band karaoke."
+    },
+    {
+      "name": "Family Infrastructure",
+      "description": "Land and infrastructure for Dan's children to build their own homes."
+    }
+  ],
+  "philosophy": "Sustainable abundance — post-scarcity model where the best version of everything is eventually given away freely.",
+  "fundingStrategy": "90%+ through grants (neurodivergent education, agriculture, tourism) and favorable loans (USDA, etc.)",
+  "timeline": "5-7 years",
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

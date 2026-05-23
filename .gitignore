@@ -1,0 +1,37 @@
+﻿# Kahn 2.0 — Git Ignore Rules
+
+
+# Large data exports and raw conversation archives
+01_source_truth/raw_exports/
+01_source_truth/*.json
+01_source_truth/*.zip
+01_source_truth/*.txt
+
+
+# Temporary / scratch files
+*.tmp
+*.log
+*.bak
+*~
+.DS_Store
+Thumbs.db
+
+
+# Python / script artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+env/
+
+
+# Node / build artifacts (if any future tools)
+node_modules/
+dist/
+build/
+
+
+# Sensitive or local-only
+.env
+*.local
+secrets/

@@ -1,0 +1,40 @@
+{
+  "captured_at": "2026-04-17",
+  "source_url": "https://app.batchleads.io/app/property-search-new",
+  "source_key": "localStorage propertySearchFilterPayload",
+  "length": 3388,
+  "hash_int31": 962725023,
+  "result_count_at_capture": "1 properties found",
+  "result_primary": "1138 Coldwater Canyon Dr, Beverly Hills, CA 90210 ($5,575,000)",
+  "workspace": "Andres's Workspace",
+  "notes": "Baseline Andreas active-filter state at start of Phase 1 browser recon. Session-scoped fields (search_id, sessionId, geoCluster bounding box) captured but will not match on restore if a new search_id is generated. The filter-intent portion (propertyClassifications, propertyType, mlsStatus, arvListingDiscount, dealPotential, foreclosureStatus, ownerStatusType, query) is the part that matters for restoration.",
+  "restore_procedure": "Paste in DevTools console on any *.batchleads.io page: localStorage.setItem('propertySearchFilterPayload', <stringified payload_raw>); location.reload();",
+  "payload_raw": "{\"occupancyStatus\":\"\",\"vacantStatus\":\"any-status\",\"propertyClassifications\":[\"Residential\"],\"propertyType\":[\"Single Family\"],\"storyCount\":[\"\",\"\"],\"parcelCount\":[\"\",\"\"],\"numberOfBedrooms\":[\"\",\"\"],\"numberOfBaths\":[\"\",\"\"],\"totalBuildingAreaSquareFeet\":[\"\",\"\"],\"livingAreaSquareFeet\":[\"\",\"\"],\"yearBuilt\":[\"\",\"\"],\"numberOfUnits\":[\"\",\"\"],\"numberOfCommercialUnits\":[\"\",\"\"],\"numberOfResidentialUnits\":[\"\",\"\"],\"lotSizeAcres\":[\"\",\"\"],\"buildingFeatures\":\"\",\"associationHOA\":\"\",\"mlsListingDate\":[\"\"],\"mlsFailedListingDate\":[\"\"],\"mlsBelowMarketPrice\":\"\",\"mlsOnMarket\":\"\",\"mlsStatus\":[\"Active\",\"Pending\"],\"arvSpread\":[\"\",\"\"],\"arvListingDiscount\":[0,75],\"dealPotential\":\"discount\",\"mlsDaysOnMarket\":[\"\",\"\"],\"mlsListingAmount\":[\"\",\"\"],\"arv\":[\"\",\"\"],\"foreclosureStatus\":[\"notice-of-sale\",\"notice-of-default\",\"notice-of-lis-pendens\",\"active-auction\"],\"foreclosureRecordingDate\":[\"\"],\"foreclosureAuctionDate\":[\"\"],\"foreclosureOpeningBid\":[\"\",\"\"],\"foreclosureReleaseDate\":[\"\"],\"foreclosureDefaultAmount\":[\"\",\"\"],\"yearsOfOwnership\":[[\"\",\"\"],[\"\",\"\"]],\"ownerStatusType\":[\"Individual\"],\"criteriaType\":\"\",\"firstLoanType\":\"\",\"lienRecordingDate\":[\"\"],\"bankruptcyRecordingDate\":[\"\"],\"taxDelinquentYear\":[\"\",\"\"],\"lastSalePrice\":[\"\",\"\"],\"lastTransferDocumentType\":\"\",\"estimatedValue\":[\"\",\"\"],\"estimatedEquity\":[\"\",\"\"],\"equityPercent\":[\"\",\"\"],\"loanToValuePercent\":[\"\",\"\"],\"assessedTotalValue\":[\"\",\"\"],\"assessedLandValue\":[\"\",\"\"],\"totalOpenLienCount\":[\"\",\"\"],\"numberOfOpenMortgages\":\"\",\"totalOpenLienBalance\":[\"\",\"\"],\"firstLoanToCurrentValuePercentage\":[\"\",\"\"],\"firstLoanInterestRate\":[\"\",\"\"],\"cashBuyer\":\"\",\"freeAndClear\":\"\",\"cashPurchase\":\"\",\"ownerType\":\"\",\"lastSoldPrice\":[\"\",\"\"],\"lastSoldDate\":[\"\"],\"propertiesOwned\":[\"\",\"\"],\"propertiesTotalEquity\":[\"\",\"\"],\"propertiesTotalEstimatedValue\":[\"\",\"\"],\"mortgagesTotalBalance\":[\"\",\"\"],\"mortgagesCount\":[\"\",\"\"],\"mortgagesAverageBalance\":[\"\",\"\"],\"excludeSameAddressProperties\":\"\",\"showOnlySameAddressProperties\":\"\",\"demographicsAge\":[\"\",\"\"],\"demographicsHouseholdSize\":[\"\",\"\"],\"demographicsIncome\":[\"\",\"\"],\"demographicsNetWorth\":[\"\",\"\"],\"demographicsDiscretionaryIncome\":[\"\",\"\"],\"demographicsHomeowner\":\"\",\"demographicsBusinessOwner\":\"\",\"demographicsGender\":\"\",\"demographicsHasChildren\":\"\",\"demographicsInvestmentPersonal\":\"\",\"demographicsInvestmentRealEstate\":\"\",\"demographicsInvestmentForeign\":\"\",\"demographicsInvestmentStocksAndBonds\":\"\",\"demographicsMaritalStatus\":\"\",\"demographicsMillionaire\":\"\",\"demographicsPetOwner\":\"\",\"demographicsSingleParent\":\"\",\"demographicsSmoker\":\"\",\"demographicsLengthOfResidenceYears\":[\"\",\"\"],\"demographicsReligiousAffiliation\":\"\",\"quickLists\":[],\"paged\":1,\"search_id\":1776457297167,\"savedFilterId\":null,\"geoClustering\":true,\"geoCluster\":{\"nwGeoPoint\":{\"latitude\":34.18597277135879,\"longitude\":-118.60787898349608},\"seGeoPoint\":{\"latitude\":34.01995219358689,\"longitude\":-118.21305781650389}},\"query\":\"Beverly Hills, CA 90210, USA\",\"zoomLevel\":11,\"pagesize\":25,\"excludedHashes\":[],\"areaPolygons\":true,\"useAreaPolygons\":true,\"batchrank_score_percentile\":null,\"apn\":\"\",\"individualProperty\":false,\"excludePayloadIsInitialQuickFilter\":false,\"mapDragged\":false,\"sessionId\":\"sess-1776457189836-9053\",\"excludePayloadUpdateQuickFilter\":false,\"mlsDescriptionInList\":[\"\"],\"mlsDescriptionNotInList\":[\"\"],\"lienType\":\"\",\"filingDate\":\"\",\"recordingDate\":\"\",\"buildingType\":\"\",\"lienAmount\":[\"\",\"\"],\"deed_types\":\"\",\"returnSameAndDifferentAddressProperties\":\"\"}",
+  "payload_parsed_intent": {
+    "geography": {
+      "query": "Beverly Hills, CA 90210, USA",
+      "geoCluster": {
+        "nwGeoPoint": {"latitude": 34.18597277135879, "longitude": -118.60787898349608},
+        "seGeoPoint": {"latitude": 34.01995219358689, "longitude": -118.21305781650389}
+      },
+      "zoomLevel": 11,
+      "areaPolygons": true,
+      "useAreaPolygons": true
+    },
+    "active_filters": {
+      "vacantStatus": "any-status",
+      "propertyClassifications": ["Residential"],
+      "propertyType": ["Single Family"],
+      "mlsStatus": ["Active", "Pending"],
+      "arvListingDiscount": [0, 75],
+      "dealPotential": "discount",
+      "foreclosureStatus": ["notice-of-sale", "notice-of-default", "notice-of-lis-pendens", "active-auction"],
+      "ownerStatusType": ["Individual"]
+    },
+    "defaults": {
+      "paged": 1,
+      "pagesize": 25,
+      "geoClustering": true
+    }
+  }
+}

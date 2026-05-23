@@ -1,0 +1,104 @@
+{
+  "goalId": "project_nebula",
+  "phases": [
+    {
+      "id": "phase_survival",
+      "name": "90-Day Survival",
+      "description": "Stabilize. Survive. Build foundation. Legal resolution, income secured, health systems operational, Life Narration running.",
+      "status": "active",
+      "startDate": "2026-03-29",
+      "targetEndDate": "2026-06-27",
+      "priorityOrder": ["legal", "financial", "health", "creative", "relational"],
+      "exitCriteria": [
+        "Attorney retained and court date handled",
+        "Remote income source secured ($5K+/month)",
+        "IOP completed or transitioned to outpatient",
+        "Training and nutrition systems operational",
+        "Life Narration system generating daily narrations",
+        "Custody path identified"
+      ],
+      "objectiveIds": [
+        "legal_attorney",
+        "legal_court_april15",
+        "legal_dcfs",
+        "fin_income",
+        "fin_budget",
+        "health_iop",
+        "health_recomp",
+        "health_nutrition",
+        "creative_ln_build",
+        "creative_knowledge",
+        "rel_custody",
+        "rel_brett"
+      ]
+    },
+    {
+      "id": "phase_stabilization",
+      "name": "Stabilization",
+      "description": "Legal resolution or clear path. Stable income with savings building. Body recomp targets progressing. Life Narration operational. Fourth child born.",
+      "status": "locked",
+      "startDate": "2026-07-01",
+      "targetEndDate": "2026-12-31",
+      "priorityOrder": ["financial", "legal", "relational", "health", "creative"],
+      "exitCriteria": [
+        "Legal matters resolved or in clear resolution path",
+        "Stable income with savings growing",
+        "Medication optimized, training consistent",
+        "Custody normalized or improving",
+        "PitchBlack concept validated"
+      ],
+      "objectiveIds": []
+    },
+    {
+      "id": "phase_foundation",
+      "name": "Foundation",
+      "description": "Grant research and applications. PitchBlack launches. Peak physical condition. Financial independence building.",
+      "status": "locked",
+      "startDate": "2027-01-01",
+      "targetEndDate": "2027-12-31",
+      "priorityOrder": ["financial", "creative", "health", "relational", "legal"],
+      "exitCriteria": [
+        "First grant applications submitted",
+        "PitchBlack generating revenue",
+        "Body recomp targets achieved",
+        "Housing independence achieved"
+      ],
+      "objectiveIds": []
+    },
+    {
+      "id": "phase_build",
+      "name": "Build",
+      "description": "Land acquisition in Colorado. Compound planning and construction begins. PitchBlack revenue growing. Grant funding secured.",
+      "status": "locked",
+      "startDate": "2028-01-01",
+      "targetEndDate": "2029-12-31",
+      "priorityOrder": ["creative", "financial", "relational", "health", "legal"],
+      "exitCriteria": [
+        "Land acquired near Golden, CO",
+        "Construction plans approved",
+        "Multiple revenue streams active",
+        "Children have regular visitation/custody"
+      ],
+      "objectiveIds": []
+    },
+    {
+      "id": "phase_nebula",
+      "name": "Nebula",
+      "description": "Compound operational. All revenue streams active. Children's infrastructure built. Sustainable abundance achieved.",
+      "status": "locked",
+      "startDate": "2030-01-01",
+      "targetEndDate": null,
+      "priorityOrder": ["creative", "relational", "financial", "health", "legal"],
+      "exitCriteria": [
+        "Nebula HQ operational",
+        "PitchBlack at scale — best version of everything",
+        "Neurodivergent retreat running programs",
+        "Wedding venue hosting events",
+        "Children building on the land",
+        "Sustainable abundance: giving work away freely"
+      ],
+      "objectiveIds": []
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

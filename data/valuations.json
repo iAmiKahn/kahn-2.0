@@ -1,0 +1,554 @@
+[
+  {
+    "id": "val_crofton_001",
+    "prospectId": "p_crofton_001",
+    "propertyId": "prop_crofton_001",
+    "requestedAt": "2026-04-01T01:56:06.997Z",
+    "subject": {
+      "address": "2621 Crofton Circle, Lake in the Hills, IL 60156",
+      "propertyType": "sfr",
+      "sqft": 2230,
+      "beds": 4,
+      "bathsFull": 3,
+      "bathsHalf": 1,
+      "garageSpaces": 2,
+      "basementFinishedSqft": 500,
+      "yearBuilt": 1995,
+      "condition": "average",
+      "pool": true,
+      "deck": true,
+      "improvements": []
+    },
+    "market": {
+      "condition": "seller",
+      "monthlyAppreciation": 0.004,
+      "listToSaleRatio": 1.015,
+      "avgDom": 14,
+      "notes": "Active seller market. Meadowbrook median $418K in 2025, up from $390K 2024. DOM ~12-17 days. Homes frequently selling above list."
+    },
+    "comps": [
+      {
+        "address": "5420 Avalon Ln, Lake in the Hills, IL 60156",
+        "salePrice": 365000,
+        "saleDate": "2025-02-15",
+        "sqft": 1556,
+        "bathsFull": 2,
+        "bathsHalf": 0,
+        "garageSpaces": 2,
+        "condition": "good",
+        "basementFinishedSqft": 300,
+        "distanceMiles": 0.6
+      },
+      {
+        "address": "4781 Highwood Ln, Lake in the Hills, IL 60156",
+        "salePrice": 405000,
+        "saleDate": "2025-01-20",
+        "sqft": 1804,
+        "bathsFull": 2,
+        "bathsHalf": 1,
+        "garageSpaces": 2,
+        "condition": "good",
+        "basementFinishedSqft": 400,
+        "distanceMiles": 0.8
+      },
+      {
+        "address": "4811 Princeton Ln, Lake in the Hills, IL 60156",
+        "salePrice": 425000,
+        "saleDate": "2025-01-10",
+        "sqft": 3021,
+        "bathsFull": 2,
+        "bathsHalf": 1,
+        "garageSpaces": 3,
+        "condition": "good",
+        "basementFinishedSqft": 600,
+        "distanceMiles": 0.7
+      }
+    ],
+    "result": {
+      "pointEstimate": 446500,
+      "rangeLow": 428500,
+      "rangeHigh": 464500,
+      "confidence": {
+        "score": 70,
+        "label": "High",
+        "color": "green",
+        "reasons": [
+          "3 comps provided",
+          "Complete subject data"
+        ],
+        "gaps": [
+          "Comps are >6 months old — market may have shifted"
+        ]
+      },
+      "adjustedComps": [
+        {
+          "address": "5420 Avalon Ln, Lake in the Hills, IL 60156",
+          "salePrice": 365000,
+          "saleDate": "2025-02-15",
+          "sqft": 1556,
+          "bathsFull": 2,
+          "bathsHalf": 0,
+          "garageSpaces": 2,
+          "condition": "good",
+          "basementFinishedSqft": 300,
+          "distanceMiles": 0.6,
+          "adjustedPrice": 449003,
+          "adjustments": {
+            "sqft": 47431,
+            "condition": -20622,
+            "bathsFull": 8000,
+            "bathsHalf": 4000,
+            "garage": 0,
+            "basement": 3000,
+            "pool": 20000,
+            "time": 22194
+          },
+          "totalNetAdj": 84003,
+          "totalGrossAdj": 125247,
+          "monthsAgo": 13,
+          "weight": 0.35
+        },
+        {
+          "address": "4781 Highwood Ln, Lake in the Hills, IL 60156",
+          "salePrice": 405000,
+          "saleDate": "2025-01-20",
+          "sqft": 1804,
+          "bathsFull": 2,
+          "bathsHalf": 1,
+          "garageSpaces": 2,
+          "condition": "good",
+          "basementFinishedSqft": 400,
+          "distanceMiles": 0.8,
+          "adjustedPrice": 466230,
+          "adjustments": {
+            "sqft": 28691,
+            "condition": -21685,
+            "bathsFull": 8000,
+            "bathsHalf": 0,
+            "garage": 0,
+            "basement": 1500,
+            "pool": 20000,
+            "time": 24724
+          },
+          "totalNetAdj": 61230,
+          "totalGrossAdj": 104600,
+          "monthsAgo": 14,
+          "weight": 0.35
+        },
+        {
+          "address": "4811 Princeton Ln, Lake in the Hills, IL 60156",
+          "salePrice": 425000,
+          "saleDate": "2025-01-10",
+          "sqft": 3021,
+          "bathsFull": 2,
+          "bathsHalf": 1,
+          "garageSpaces": 3,
+          "condition": "good",
+          "basementFinishedSqft": 600,
+          "distanceMiles": 0.7,
+          "adjustedPrice": 405013,
+          "adjustments": {
+            "sqft": -33384,
+            "condition": -19581,
+            "bathsFull": 8000,
+            "bathsHalf": 0,
+            "garage": -15000,
+            "basement": -1500,
+            "pool": 20000,
+            "time": 21478
+          },
+          "totalNetAdj": -19987,
+          "totalGrossAdj": 118943,
+          "monthsAgo": 14,
+          "weight": 0.35
+        }
+      ],
+      "methodology": "Sales Comparison Approach (CMA) — weighted average of adjusted comparables",
+      "weightedAverage": 440082,
+      "marketConditionAdj": "seller market overlay applied"
+    },
+    "gaps": {
+      "critical": [],
+      "recommended": [],
+      "nice": [
+        {
+          "field": "Lot size",
+          "impact": "Lot size adjustment omitted"
+        },
+        {
+          "field": "Recent improvements list",
+          "impact": "Cannot model condition uplift"
+        }
+      ],
+      "completeness": {
+        "level": "complete",
+        "pct": 95
+      }
+    },
+    "actualSalePrice": null,
+    "actualSaleDate": null,
+    "variance": null
+  },
+  {
+    "id": "val_daybreak_002",
+    "prospectId": "p_daybreak_002",
+    "propertyId": "prop_daybreak_002",
+    "requestedAt": "2026-04-01T01:56:06.997Z",
+    "subject": {
+      "address": "2304 Daybreak Drive, Lake in the Hills, IL 60156",
+      "propertyType": "sfr",
+      "sqft": 2448,
+      "beds": 3,
+      "bathsFull": 2,
+      "bathsHalf": 1,
+      "garageSpaces": 2,
+      "basementFinishedSqft": 0,
+      "yearBuilt": 1998,
+      "condition": "average",
+      "pool": false,
+      "deck": false,
+      "improvements": []
+    },
+    "market": {
+      "condition": "seller",
+      "monthlyAppreciation": 0.004,
+      "listToSaleRatio": 1.015,
+      "avgDom": 14,
+      "notes": "Active seller market. Meadowbrook median $418K in 2025, up from $390K 2024. DOM ~12-17 days. Homes frequently selling above list."
+    },
+    "comps": [
+      {
+        "address": "4781 Highwood Ln, Lake in the Hills, IL 60156",
+        "salePrice": 405000,
+        "saleDate": "2025-01-20",
+        "sqft": 1804,
+        "bathsFull": 2,
+        "bathsHalf": 1,
+        "garageSpaces": 2,
+        "condition": "good",
+        "basementFinishedSqft": 400,
+        "distanceMiles": 1.1
+      },
+      {
+        "address": "5420 Avalon Ln, Lake in the Hills, IL 60156",
+        "salePrice": 365000,
+        "saleDate": "2025-02-15",
+        "sqft": 1556,
+        "bathsFull": 2,
+        "bathsHalf": 0,
+        "garageSpaces": 2,
+        "condition": "good",
+        "basementFinishedSqft": 300,
+        "distanceMiles": 1.3
+      },
+      {
+        "address": "9 Danbury Ct, Lake in the Hills, IL 60156",
+        "salePrice": 379000,
+        "saleDate": "2025-02-01",
+        "sqft": 1950,
+        "bathsFull": 2,
+        "bathsHalf": 1,
+        "garageSpaces": 2,
+        "condition": "average",
+        "basementFinishedSqft": 0,
+        "distanceMiles": 0.9
+      }
+    ],
+    "result": {
+      "pointEstimate": 440000,
+      "rangeLow": 422500,
+      "rangeHigh": 457500,
+      "confidence": {
+        "score": 70,
+        "label": "High",
+        "color": "green",
+        "reasons": [
+          "3 comps provided",
+          "Complete subject data"
+        ],
+        "gaps": [
+          "Comps are >6 months old — market may have shifted"
+        ]
+      },
+      "adjustedComps": [
+        {
+          "address": "4781 Highwood Ln, Lake in the Hills, IL 60156",
+          "salePrice": 405000,
+          "saleDate": "2025-01-20",
+          "sqft": 1804,
+          "bathsFull": 2,
+          "bathsHalf": 1,
+          "garageSpaces": 2,
+          "condition": "good",
+          "basementFinishedSqft": 400,
+          "distanceMiles": 1.1,
+          "adjustedPrice": 443472,
+          "adjustments": {
+            "sqft": 43374,
+            "condition": -22419,
+            "bathsFull": 0,
+            "bathsHalf": 0,
+            "garage": 0,
+            "basement": -6000,
+            "time": 23517
+          },
+          "totalNetAdj": 38472,
+          "totalGrossAdj": 95310,
+          "monthsAgo": 14,
+          "weight": 0.28
+        },
+        {
+          "address": "5420 Avalon Ln, Lake in the Hills, IL 60156",
+          "salePrice": 365000,
+          "saleDate": "2025-02-15",
+          "sqft": 1556,
+          "bathsFull": 2,
+          "bathsHalf": 0,
+          "garageSpaces": 2,
+          "condition": "good",
+          "basementFinishedSqft": 300,
+          "distanceMiles": 1.3,
+          "adjustedPrice": 426989,
+          "adjustments": {
+            "sqft": 62772,
+            "condition": -21389,
+            "bathsFull": 0,
+            "bathsHalf": 4000,
+            "garage": 0,
+            "basement": -4500,
+            "time": 21106
+          },
+          "totalNetAdj": 61989,
+          "totalGrossAdj": 113767,
+          "monthsAgo": 13,
+          "weight": 0.28
+        },
+        {
+          "address": "9 Danbury Ct, Lake in the Hills, IL 60156",
+          "salePrice": 379000,
+          "saleDate": "2025-02-01",
+          "sqft": 1950,
+          "bathsFull": 2,
+          "bathsHalf": 1,
+          "garageSpaces": 2,
+          "condition": "average",
+          "basementFinishedSqft": 0,
+          "distanceMiles": 0.9,
+          "adjustedPrice": 430887,
+          "adjustments": {
+            "sqft": 29037,
+            "condition": 0,
+            "bathsFull": 0,
+            "bathsHalf": 0,
+            "garage": 0,
+            "basement": 0,
+            "time": 22850
+          },
+          "totalNetAdj": 51887,
+          "totalGrossAdj": 51887,
+          "monthsAgo": 14,
+          "weight": 0.45
+        }
+      ],
+      "methodology": "Sales Comparison Approach (CMA) — weighted average of adjusted comparables",
+      "weightedAverage": 433295,
+      "marketConditionAdj": "seller market overlay applied"
+    },
+    "gaps": {
+      "critical": [],
+      "recommended": [],
+      "nice": [
+        {
+          "field": "Lot size",
+          "impact": "Lot size adjustment omitted"
+        },
+        {
+          "field": "Recent improvements list",
+          "impact": "Cannot model condition uplift"
+        }
+      ],
+      "completeness": {
+        "level": "complete",
+        "pct": 95
+      }
+    },
+    "actualSalePrice": null,
+    "actualSaleDate": null,
+    "variance": null
+  },
+  {
+    "id": "val_louise_003_v3",
+    "prospectId": "p_louise_003",
+    "propertyId": "prop_louise_003",
+    "requestedAt": "2026-04-01T16:40:27.006Z",
+    "subject": {
+      "address": "35656 N Louise Place, Ingleside, IL 60041",
+      "propertyType": "sfr",
+      "sqft": 700,
+      "beds": 2,
+      "bathsFull": 1,
+      "bathsHalf": 0,
+      "garageSpaces": 0,
+      "basementFinishedSqft": 0,
+      "yearBuilt": null,
+      "condition": "average",
+      "pool": false,
+      "deck": false,
+      "improvements": []
+    },
+    "market": {
+      "condition": "balanced",
+      "monthlyAppreciation": 0.003,
+      "listToSaleRatio": 1,
+      "avgDom": 25,
+      "notes": "Ingleside/Long Lake area. Mixed market. Non-waterfront cottages balanced. Wide price range $180K-$580K depending on water access."
+    },
+    "comps": [
+      {
+        "address": "35678 N Louise Pl, Ingleside, IL 60041",
+        "salePrice": 180000,
+        "saleDate": "2021-02-09",
+        "sqft": 700,
+        "bathsFull": 1,
+        "bathsHalf": 0,
+        "garageSpaces": 0,
+        "condition": "average",
+        "basementFinishedSqft": 0,
+        "distanceMiles": 0.05
+      },
+      {
+        "address": "25622 W Grant Ave, Ingleside, IL 60041",
+        "salePrice": 235000,
+        "saleDate": "2024-11-26",
+        "sqft": 1147,
+        "bathsFull": 1,
+        "bathsHalf": 0,
+        "garageSpaces": 1,
+        "condition": "average",
+        "basementFinishedSqft": 0,
+        "distanceMiles": 0.9
+      },
+      {
+        "address": "34928 N Bergen St, Ingleside, IL 60041",
+        "salePrice": 274900,
+        "saleDate": "2024-11-27",
+        "sqft": 1700,
+        "bathsFull": 2,
+        "bathsHalf": 1,
+        "garageSpaces": 2,
+        "condition": "good",
+        "basementFinishedSqft": 0,
+        "distanceMiles": 1.2
+      }
+    ],
+    "result": {
+      "pointEstimate": 19500,
+      "rangeLow": 12500,
+      "rangeHigh": 24500,
+      "confidence": {
+        "score": 28,
+        "label": "Low",
+        "color": "red",
+        "reasons": [
+          "Subject and comp data now confirmed from official Lake County GIS parcel records",
+          "Water access definitively resolved — LMWATER=No, Manitou Creek watershed (not Long Lake)",
+          "Tax assessment provides independent land value cross-check ($25K adjusted)"
+        ],
+        "gaps": [
+          "CRITICAL: Only 1 comp — and it required a massive lot-size adjustment (3 lots vs 1). This single adjustment dominates uncertainty.",
+          "Improvement strip-out from comp ($75K) carries ±$15K uncertainty — drives $6K swing in land residual per sqft",
+          "No direct single-lot land sales found in Alexanders/Mitchell Highlands area — no pure land comps",
+          "Assessment-based cross-check ($25K) vs land-residual estimate ($41K) differ by $16K — weighted at 60/40",
+          "Actual demo cost unknown — 1936 structure with space heater. Get contractor quote with asbestos testing included.",
+          "Per-sqft land pricing may not hold in this micro-market — lot minimum value could be higher or lower"
+        ]
+      },
+      "methodology": "Land Residual + Demo Cost Deduction (Tear-Down) — v3 with confirmed parcel data",
+      "steps": {
+        "compSalePrice": 180000,
+        "compImprovementStrip": 75000,
+        "compLandResidualAtSale": 105000,
+        "compTimeAdjFactor": 1.192,
+        "compLandResidualAdjusted": 125160,
+        "compLotSqFt": 22991,
+        "landPerSqFt": 5.44,
+        "subjectLotSqFt": 7501,
+        "landResidualMethodValue": 40834,
+        "assessmentCrossCheck": 25384,
+        "weightedLandEstimate": 34654,
+        "demoCostDeducted": 15000
+      },
+      "notes": [
+        "Water access CLOSED: LMWATER=No in Lake County GIS. Watershed=Manitou Creek, not Long Lake. Zero water premium.",
+        "Comp (35678 N Louise) confirmed as 3 lots (22,991 sqft) built 1990 — not a single-lot 1940s cottage as assumed in v2.",
+        "Subject confirmed: 7,501 sqft lot, 816 sqft structure, built 1936, 1 bed/1 bath.",
+        "Low confidence due to single comp requiring 3-to-1 lot adjustment — most significant uncertainty driver.",
+        "Assessment cross-check ($25K adjusted) vs land-residual ($41K) weighted 40/60 to produce $35K land estimate.",
+        "Demo cost revised to $15K mid for 816 sqft 1936 structure (asbestos/lead virtually certain)."
+      ]
+    },
+    "gaps": {
+      "critical": [
+        {
+          "field": "Single comp with 3-lot-to-1-lot adjustment",
+          "impact": "Largest uncertainty driver. No pure single-lot land sales available in neighborhood."
+        },
+        {
+          "field": "Improvement strip-out uncertainty (±$15K)",
+          "impact": "Each $15K change in improvement contribution shifts land residual per sqft by $0.65/sqft, shifting final estimate by ~$5K"
+        },
+        {
+          "field": "Actual demolition cost",
+          "impact": "Get contractor quote. 1936 structure — asbestos testing required before demo permit. Budget $15K mid."
+        }
+      ],
+      "recommended": [
+        {
+          "field": "Additional land comps (vacant lot sales in 60041 or Alexanders Subdn)",
+          "impact": "One additional land comp would significantly tighten the range"
+        },
+        {
+          "field": "Confirm assessment year",
+          "impact": "If assessment is 3+ years stale, reassessment could shift cross-check value"
+        }
+      ],
+      "nice": []
+    },
+    "actualSalePrice": null,
+    "actualSaleDate": null,
+    "variance": null,
+    "revisionOf": "val_louise_003_v2",
+    "revisionReason": "Parcel records confirmed via Lake County GIS ArcGIS REST API. Prior v2 analysis used unverified comp data — comp was 3 lots (22,991 sqft) not 1 lot, built 1990 not 1940s. Water access definitively resolved: LMWATER=No, Manitou Creek watershed. All subject data corrected from official record.",
+    "confirmedParcelData": {
+      "subject": {
+        "pin": "0513114010",
+        "legal": "Alexanders Subdn Lot 13",
+        "lotSqFt": 7501,
+        "lotAcres": 0.1722,
+        "livingAreaSqFt": 816,
+        "yearBuilt": 1936,
+        "bedrooms": 1,
+        "fullBaths": 1,
+        "lakeWaterAccess": false,
+        "watershed": "Manitou Creek-Fox River",
+        "femaZone": "X",
+        "assessedLand": 7488,
+        "assessedTotal": 36590,
+        "dataSource": "Lake County GIS WABParcels MapServer Layer 12",
+        "confirmedAt": "2026-04-01T16:40:27.006Z"
+      },
+      "comp": {
+        "pin": "0513114020",
+        "legal": "Alexander's Subdn Lots 10, 11 & 12",
+        "lotSqFt": 22991,
+        "livingAreaSqFt": 1100,
+        "yearBuilt": 1990,
+        "salePrice": 180000,
+        "saleDate": "2020-12-09",
+        "lakeWaterAccess": false,
+        "dataSource": "Lake County GIS WABParcels MapServer Layer 12",
+        "confirmedAt": "2026-04-01T16:40:27.006Z"
+      }
+    }
+  }
+]

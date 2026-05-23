@@ -1,0 +1,57 @@
+{
+  "id": "relational",
+  "name": "Relational",
+  "status": "active",
+  "currentState": "Living at brother Brett's house — Brett cooks meals, provides housing stability. Three children: Joanna (8), Benjamin (6), Taylor (3). No visitation rights currently. Fourth child due July 2026. Wife is active legal adversary seeking full custody and termination of parental rights.",
+  "recurring": [],
+  "objectives": [
+    {
+      "id": "rel_custody",
+      "title": "Establish path to custody/visitation rights",
+      "description": "Tied to legal domain outcomes. Attorney must frame neurological context correctly. Goal: demonstrate stability and fitness as parent.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": null,
+      "dependencies": ["legal_court_april15"],
+      "actions": []
+    },
+    {
+      "id": "rel_brett",
+      "title": "Maintain relationship with brother Brett",
+      "description": "Brett is providing critical survival support (housing, meals). This relationship must be protected and reciprocated.",
+      "status": "in_progress",
+      "priority": 2,
+      "deadline": null,
+      "dependencies": [],
+      "actions": []
+    },
+    {
+      "id": "rel_fourth_child",
+      "title": "Prepare for fourth child (July 2026)",
+      "description": "Child due July 2026. Legal and financial situation must stabilize before birth. Need to understand custody implications.",
+      "status": "not_started",
+      "priority": 3,
+      "deadline": "2026-07-01",
+      "dependencies": ["legal_court_april15", "fin_income"],
+      "actions": []
+    }
+  ],
+  "blockers": [
+    {
+      "id": "blocker_no_visitation",
+      "title": "No visitation rights — dependent on legal resolution",
+      "severity": "high",
+      "createdAt": "2026-04-07T00:00:00Z"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "rel_m1",
+      "name": "Days since last contact with children",
+      "current": null,
+      "target": null,
+      "unit": "days"
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

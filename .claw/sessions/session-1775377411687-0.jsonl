@@ -1,0 +1,3 @@
+{"created_at_ms":1775377411687,"session_id":"session-1775377411687-0","type":"session_meta","updated_at_ms":1775377413822,"version":1}
+{"message":{"blocks":[{"text":"You are a coding agent activated in OpenClaw. Reply with only: CLAW ACTIVATED","type":"text"}],"role":"user"},"type":"message"}
+{"message":{"blocks":[{"text":"CLAW ACTIVATED","type":"text"}],"role":"assistant","usage":{"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"input_tokens":5809,"output_tokens":8}},"type":"message"}

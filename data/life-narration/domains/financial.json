@@ -1,0 +1,104 @@
+{
+  "id": "financial",
+  "name": "Financial",
+  "status": "critical",
+  "currentState": "~$1,000 cash. No income. Monthly obligations exist (Claude Pro $20). Job automation engine running but no applications converting yet. Need remote position immediately — afternoons/evenings/weekends around IOP schedule.",
+  "recurring": [
+    {
+      "id": "fin_rec_jobs",
+      "title": "Review scored jobs from automation engine",
+      "schedule": { "days": ["mon", "tue", "wed", "thu", "fri"], "time": "15:00" }
+    }
+  ],
+  "objectives": [
+    {
+      "id": "fin_income",
+      "title": "Secure remote income source",
+      "description": "Remote position. Target: $60K min / $80K-$120K ideal. Output-based, minimal sync meetings. Real estate tech, operations, AI automation, or documentation roles.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": "2026-05-07",
+      "dependencies": [],
+      "actions": [
+        {
+          "id": "fin_income_review",
+          "title": "Review and apply to top-scored jobs from automation engine",
+          "status": "pending",
+          "dueDate": "2026-04-07",
+          "recurring": true
+        },
+        {
+          "id": "fin_income_network",
+          "title": "Identify and reach out to 3 contacts for remote opportunities",
+          "status": "pending",
+          "dueDate": "2026-04-09"
+        },
+        {
+          "id": "fin_income_resume",
+          "title": "Ensure resume and LinkedIn optimized for target roles",
+          "status": "pending",
+          "dueDate": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "id": "fin_budget",
+      "title": "Establish survival budget",
+      "description": "Track every dollar. Know exactly what's needed per month and what the runway looks like.",
+      "status": "not_started",
+      "priority": 2,
+      "deadline": "2026-04-14",
+      "dependencies": [],
+      "actions": [
+        {
+          "id": "fin_budget_list",
+          "title": "List all monthly obligations and minimum survival costs",
+          "status": "pending",
+          "dueDate": "2026-04-08"
+        }
+      ]
+    },
+    {
+      "id": "fin_grants",
+      "title": "Begin grant research for Nebula funding",
+      "description": "Long-term: identify USDA, agricultural, tourism, and neurodivergent education grants. Not urgent but needs to start.",
+      "status": "not_started",
+      "priority": 4,
+      "deadline": null,
+      "dependencies": ["fin_income"],
+      "actions": []
+    }
+  ],
+  "blockers": [
+    {
+      "id": "blocker_no_income",
+      "title": "No income source secured",
+      "severity": "critical",
+      "createdAt": "2026-04-07T00:00:00Z"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "fin_m1",
+      "name": "Cash on hand",
+      "current": 1000,
+      "target": null,
+      "unit": "dollars"
+    },
+    {
+      "id": "fin_m2",
+      "name": "Applications submitted this week",
+      "current": 0,
+      "target": 10,
+      "unit": "count"
+    },
+    {
+      "id": "fin_m3",
+      "name": "Monthly income",
+      "current": 0,
+      "target": 5000,
+      "unit": "dollars"
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

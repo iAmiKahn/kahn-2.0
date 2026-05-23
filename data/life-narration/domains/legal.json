@@ -1,0 +1,115 @@
+{
+  "id": "legal",
+  "name": "Legal",
+  "status": "critical",
+  "currentState": "Active order of protection (harassment/impeding liberties — no violence). Divorce proceedings filed. DCFS finding against Dan with 5-year employment bar on minors. Wife seeking full custody and termination of parental rights. April 15 court date is the next critical milestone.",
+  "recurring": [],
+  "objectives": [
+    {
+      "id": "legal_attorney",
+      "title": "Secure and retain competent attorney",
+      "description": "Attorney who understands neurological context (ADHD burnout dissociative episode ≠ violence pattern). Must be prepared for April 15.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": "2026-04-10",
+      "dependencies": [],
+      "actions": [
+        {
+          "id": "legal_attorney_interview1",
+          "title": "Complete first attorney interview",
+          "status": "completed",
+          "dueDate": "2026-03-30"
+        },
+        {
+          "id": "legal_attorney_interview2",
+          "title": "Complete second attorney interview",
+          "status": "completed",
+          "dueDate": "2026-04-02"
+        },
+        {
+          "id": "legal_attorney_retain",
+          "title": "Confirm attorney retained and engaged",
+          "status": "pending",
+          "dueDate": "2026-04-08"
+        },
+        {
+          "id": "legal_attorney_brief",
+          "title": "Brief attorney on full neurological context and legal strategy",
+          "status": "pending",
+          "dueDate": "2026-04-09"
+        }
+      ]
+    },
+    {
+      "id": "legal_court_april15",
+      "title": "Prepare for April 15 court date",
+      "description": "OOP hearing and divorce proceedings. Need evidence organized, attorney prepped, strategy clear.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": "2026-04-15",
+      "dependencies": ["legal_attorney"],
+      "actions": [
+        {
+          "id": "legal_court_evidence",
+          "title": "Organize all evidence and documentation for court",
+          "status": "pending",
+          "dueDate": "2026-04-10"
+        },
+        {
+          "id": "legal_court_strategy",
+          "title": "Finalize legal strategy with attorney",
+          "status": "pending",
+          "dueDate": "2026-04-12"
+        },
+        {
+          "id": "legal_court_prep",
+          "title": "Final court preparation — review testimony, documents, logistics",
+          "status": "pending",
+          "dueDate": "2026-04-14"
+        }
+      ]
+    },
+    {
+      "id": "legal_dcfs",
+      "title": "Manage DCFS case",
+      "description": "Finding against Dan. 5-year bar on employment with minors. Need to understand appeal options and impact on custody.",
+      "status": "in_progress",
+      "priority": 2,
+      "deadline": null,
+      "dependencies": ["legal_attorney"],
+      "actions": [
+        {
+          "id": "legal_dcfs_review",
+          "title": "Review DCFS finding details and appeal timeline with attorney",
+          "status": "pending",
+          "dueDate": "2026-04-11"
+        }
+      ]
+    }
+  ],
+  "blockers": [
+    {
+      "id": "blocker_attorney_status",
+      "title": "Attorney retention not yet confirmed",
+      "severity": "high",
+      "createdAt": "2026-04-07T00:00:00Z"
+    }
+  ],
+  "metrics": [
+    {
+      "id": "legal_m1",
+      "name": "Court dates prepared",
+      "current": 0,
+      "target": 1,
+      "unit": "count"
+    },
+    {
+      "id": "legal_m2",
+      "name": "Attorney retained",
+      "current": 0,
+      "target": 1,
+      "unit": "boolean"
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}

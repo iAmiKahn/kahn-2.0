@@ -1,0 +1,92 @@
+{
+  "id": "health",
+  "name": "Health",
+  "status": "active",
+  "currentState": "IOP active Mon-Fri 9-11:45 AM (positive effects noted). Training daily 1-3 PM at gym. 1-hour walk after dinner. Medications: Abilify + sleep aid. 5'11\", 205 lbs, ~30% BF. 3 years CrossFit background, 2 months detraining. Body recomp target under review.",
+  "recurring": [
+    {
+      "id": "health_rec_iop",
+      "title": "IOP session",
+      "schedule": { "days": ["mon", "tue", "wed", "thu", "fri"], "time": "09:00-11:45" }
+    },
+    {
+      "id": "health_rec_training",
+      "title": "Training session",
+      "schedule": { "days": ["mon", "tue", "wed", "thu", "fri", "sat"], "time": "13:00-15:00" }
+    },
+    {
+      "id": "health_rec_walk",
+      "title": "Evening walk (1 hour)",
+      "schedule": { "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "time": "19:00" }
+    },
+    {
+      "id": "health_rec_meds",
+      "title": "Take medications (Abilify + sleep aid)",
+      "schedule": { "days": ["mon", "tue", "wed", "thu", "fri", "sat", "sun"], "time": "21:00" }
+    }
+  ],
+  "objectives": [
+    {
+      "id": "health_iop",
+      "title": "Complete IOP program",
+      "description": "Intensive outpatient program for mental health stabilization. Critical for legal case and personal recovery.",
+      "status": "in_progress",
+      "priority": 1,
+      "deadline": null,
+      "dependencies": [],
+      "actions": []
+    },
+    {
+      "id": "health_recomp",
+      "title": "Body recomposition — reach target composition",
+      "description": "Proposed target: 180-185 lbs at 12-15% BF (adjusted from original 225/8-10% which exceeds natural FFMI limits). Awaiting approval.",
+      "status": "not_started",
+      "priority": 3,
+      "deadline": null,
+      "dependencies": ["health_iop"],
+      "actions": [
+        {
+          "id": "health_recomp_approve",
+          "title": "Approve adjusted body recomp targets",
+          "status": "pending",
+          "dueDate": null
+        }
+      ]
+    },
+    {
+      "id": "health_nutrition",
+      "title": "Establish nutrition system",
+      "description": "Brother Brett cooks all meals. Need exact ingredients and quantities. Budget-conscious. Medication-safe.",
+      "status": "not_started",
+      "priority": 2,
+      "deadline": null,
+      "dependencies": ["health_recomp"],
+      "actions": []
+    }
+  ],
+  "blockers": [],
+  "metrics": [
+    {
+      "id": "health_m1",
+      "name": "IOP attendance this week",
+      "current": 0,
+      "target": 5,
+      "unit": "sessions"
+    },
+    {
+      "id": "health_m2",
+      "name": "Training sessions this week",
+      "current": 0,
+      "target": 6,
+      "unit": "sessions"
+    },
+    {
+      "id": "health_m3",
+      "name": "Weight",
+      "current": 205,
+      "target": 183,
+      "unit": "lbs"
+    }
+  ],
+  "updatedAt": "2026-04-07T00:00:00Z"
+}
